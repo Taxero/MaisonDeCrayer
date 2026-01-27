@@ -86,7 +86,7 @@ const AdminBookingExpanded = ({ booking, bookingType }) => {
         {/* PAYMENT */}
         <p className="flex items-center gap-2 font-semibold text-amber-400">
           <FaMoneyBillWave />
-          ₹{(booking.totalAmount).toFixed(2)}
+          € {(booking.totalAmount).toFixed(2)}
         </p>
 
         {/* STATUS */}

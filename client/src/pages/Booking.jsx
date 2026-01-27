@@ -234,12 +234,12 @@ const Booking = () => {
                 <div className="space-y-1 text-sm text-white/70">
                   <div className="flex justify-between">
                     <span>
-                      ₹{isEvent ? room.pricePerHour : room.pricePerNight} ×{" "}
+                      € {isEvent ? room.pricePerHour : room.pricePerNight} ×{" "}
                       {isEvent ? hours.toFixed(2) : nights}
                     </span>
                     <span className="text-white">
-                      ₹{isEvent
-                        ? room.pricePerHour * hours
+                      € {isEvent
+                        ? (room.pricePerHour * hours).toFixed(2)
                         : room.pricePerNight * nights}
                     </span>
                   </div>
@@ -259,7 +259,7 @@ const Booking = () => {
                 <div className="flex justify-between">
                   <span>Total</span>
                   <span className="text-xl font-semibold text-amber-400">
-                    ₹{totalPrice}
+                    €{(totalPrice).toFixed(2)}
                   </span>
                 </div>
 

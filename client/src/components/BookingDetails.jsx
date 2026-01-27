@@ -19,8 +19,7 @@ const BookingDetails = ({
             {isEventBooking ? "Price / Hour" : "Price / Night"}
           </p>
           <p className="text-lg font-semibold text-white">
-            ₹
-            {isEventBooking
+            € {isEventBooking
               ? booking.room?.pricePerHour
               : booking.room?.pricePerNight}
           </p>

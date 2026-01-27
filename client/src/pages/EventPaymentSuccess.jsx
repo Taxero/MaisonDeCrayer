@@ -83,7 +83,7 @@ const EventPaymentSuccess = () => {
                 Total Paid
               </span>
               <span className="text-xl font-semibold text-amber-400">
-                ₹{booking.totalAmount}
+                € {(booking.totalAmount).toFixed(2)}
               </span>
             </div>
 

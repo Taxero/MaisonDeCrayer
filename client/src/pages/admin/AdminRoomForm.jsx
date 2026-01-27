@@ -4,7 +4,7 @@ import api from "../../api/axios";
 import { useForm } from "react-hook-form";
 import {
   FaBed,
-  FaRupeeSign,
+  FaEuroSign,
   FaUsers,
   FaWarehouse,
   FaListUl,
@@ -145,7 +145,7 @@ const AdminRoomForm = () => {
                 : "Price per Night"}
             </label>
             <div className="relative">
-              <FaRupeeSign className="absolute left-3 top-3 text-gray-500 text-sm" />
+              <FaEuroSign className="absolute left-3 top-3 text-gray-500 text-sm" />
               <input
                 type="number"
                 className="w-full bg-black border border-white/10 text-white pl-10 pr-3 py-2 rounded-lg"

@@ -242,7 +242,7 @@ const AdminCheckIn = () => {
           <div className="flex items-center gap-3">
             <FaMoneyCheckAlt className="text-amber-400" />
             <p className="text-gray-300">
-              Paid ₹{successData.totalAmount} ·{" "}
+              Paid €{(successData.totalAmount).toFixed(2)} ·{" "}
               {successData.payment.status}
             </p>
           </div>

@@ -61,7 +61,7 @@ const AdminBookingRow = ({
 
           {/* AMOUNT */}
           <p className="font-semibold text-white">
-            ₹{(booking.totalAmount).toFixed(2)}
+            € {(booking.totalAmount).toFixed(2)}
           </p>
 
           {/* TOGGLE ICON */}

@@ -58,7 +58,7 @@ const RoomDetails = () => {
               {room.name}
             </h1>
             <p className="text-amber-400 text-lg font-semibold">
-              ₹{isEvent ? room.pricePerHour : room.pricePerNight}{" "}
+              € {isEvent ? room.pricePerHour : room.pricePerNight}{" "}
               / {isEvent ? "hour" : "night"}
             </p>
           </div>
@@ -165,7 +165,7 @@ const RoomDetails = () => {
                 </p>
 
                 <p className="text-4xl font-bold mb-6">
-                  ₹{isEvent ? room.pricePerHour : room.pricePerNight}{" "}
+                  € {isEvent ? room.pricePerHour : room.pricePerNight}{" "}
                   <span className="text-base text-white/50 font-medium">
                     {" "}
                     / {isEvent ? "hour" : "night"}

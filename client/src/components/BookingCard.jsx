@@ -53,7 +53,7 @@ const BookingCard = ({
           {/* RIGHT */}
           <div className="text-right">
             <p className="text-lg font-semibold text-white">
-              ₹{(booking.totalAmount).toFixed(2)}
+              € {(booking.totalAmount).toFixed(2)}
             </p>
 
             <span

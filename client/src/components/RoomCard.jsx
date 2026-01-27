@@ -45,7 +45,7 @@ const RoomCard = ({ room }) => {
                        text-sm font-semibold
                        shadow-md"
           >
-            ₹{isEvent ? room.pricePerHour : room.pricePerNight}{" "}
+            € {isEvent ? room.pricePerHour : room.pricePerNight}{" "}
             / {isEvent ? "hour" : "night"}
           </div>
         </div>

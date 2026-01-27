@@ -83,7 +83,7 @@ const PaymentSuccess = () => {
                 Total Paid
               </span>
               <span className="text-xl font-semibold text-amber-400">
-                ₹{booking.totalAmount}
+                € {booking.totalAmount}
               </span>
             </div>
 
