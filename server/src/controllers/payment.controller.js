@@ -15,10 +15,10 @@ exports.createPaymentIntent = async (req, res, next) => {
       return next(new AppError("Invalid booking", 400));
     }
 
-    // Create Stripe PaymentIntent (USD)
+    // Create Stripe PaymentIntent (EUR)
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(booking.totalAmount * 100), // USD → cents
-      currency: "usd",
+      currency: "eur",
       automatic_payment_methods: {
         enabled: true,
       },
@@ -32,7 +32,7 @@ exports.createPaymentIntent = async (req, res, next) => {
       booking: booking._id,
       stripePaymentIntentId: paymentIntent.id,
       amount: booking.totalAmount,
-      currency: "USD",
+      currency: "EUR",
       status: "CREATED",
     });
 

@@ -5,6 +5,8 @@ import {
   FaHotel,
   FaArrowRight,
 } from "react-icons/fa";
+import { BiSolidMessageSquareDetail } from "react-icons/bi";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 const AdminDashboard = () => {
   return (
@@ -76,7 +78,7 @@ const AdminDashboard = () => {
             </div>
           </NavLink>
 
-          {/* MANAGE ROOMS */}
+
           <NavLink to="/admin/rooms" className="group">
             <div className="h-full bg-neutral-900 border border-white/10 rounded-2xl p-6 hover:border-amber-400/40 transition">
               <div className="flex items-start justify-between mb-6">
@@ -101,6 +103,50 @@ const AdminDashboard = () => {
                 Create, edit rooms, update pricing, amenities, and
                 manage room images.
               </p>
+            </div>
+          </NavLink>
+          <NavLink to="/admin/checkin" className="group">
+            <div className="h-full bg-neutral-900 border border-white/10 rounded-2xl p-6 hover:border-amber-400/40 transition">
+              <div className="flex items-start justify-between mb-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 shrink-0 text-xl">
+                    <RiVerifiedBadgeFill />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold">
+                      Verify & Checkin
+                    </h2>
+                    <p className="text-sm text-gray-400">
+                      Validate the user bookings and marked checkedin
+                    </p>
+                  </div>
+                </div>
+
+                <FaArrowRight className="text-gray-500 group-hover:text-amber-400 transition" />
+              </div>
+            </div>
+          </NavLink>
+
+          <NavLink to="/admin/messages" className="group">
+            <div className="h-full bg-neutral-900 border border-white/10 rounded-2xl p-6 hover:border-amber-400/40 transition">
+              <div className="flex items-start justify-between mb-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 shrink-0 text-xl">
+                    <BiSolidMessageSquareDetail />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold">
+                      Messages
+                    </h2>
+                    <p className="text-sm text-gray-400">
+                      Manage all user messages and mark them read and delete
+                    </p>
+                  </div>
+                </div>
+
+                <FaArrowRight className="text-gray-500 group-hover:text-amber-400 transition" />
+              </div>
+
             </div>
           </NavLink>
         </div>

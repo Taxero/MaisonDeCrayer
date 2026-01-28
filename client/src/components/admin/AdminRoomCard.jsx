@@ -4,7 +4,7 @@ import {
   FaToggleOn,
   FaToggleOff,
   FaBed,
-  FaRupeeSign,
+  FaEuroSign,
   FaTrash
 } from "react-icons/fa";
 
@@ -43,9 +43,9 @@ const AdminRoomCard = ({
 
         {/* ================= PRICING ================= */}
         <div className="md:col-span-3 flex items-center gap-2 text-gray-300">
-          <FaRupeeSign className="text-sm text-amber-400" />
+          <FaEuroSign className="text-sm text-amber-400" />
           <span className="font-medium">
-            € {room.roomCategory == "STAY" ? room.pricePerNight : room.pricePerHour}
+            {room.roomCategory == "STAY" ? room.pricePerNight : room.pricePerHour}
           </span>
           <span className="text-xs text-gray-500">
             / {room.roomCategory == "STAY" ? "night" : "hour"}
