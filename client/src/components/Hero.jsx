@@ -96,8 +96,8 @@ const Hero = () => {
 
           {/* Enhanced Subtext */}
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-8 font-light leading-relaxed">
-            Immerse yourself in the perfect blend of Belgian heritage and contemporary luxury.
-            Our boutique hotel offers an extraordinary experience with world-class amenities,
+            Immerse yourself in the perfect blend of Belgian heritage and contemporary.
+            We offers an extraordinary experience with world-class amenities,
             personalized service, and stunning views of Brussels.
           </p>
 
@@ -107,13 +107,13 @@ const Hero = () => {
               <Calendar className="text-yellow-400 group-hover:animate-pulse" size={18} />
               <div>
                 <div className="text-white font-medium text-sm">Since 1898</div>
-                <div className="text-white/60 text-xs">Heritage Hotel Ab</div>
+                <div className="text-white/60 text-xs">Heritage Ab</div>
               </div>
             </div>
             <div className="flex items-center gap-3 glass-morphism rounded-lg px-4 py-3 hover-lift group">
               <Sparkles className="text-yellow-400 group-hover:animate-pulse" size={18} />
               <div>
-                <div className="text-white font-medium text-sm">50 Luxury Suites</div>
+                <div className="text-white font-medium text-sm">50 Suites</div>
                 <div className="text-white/60 text-xs">Premium Comfort</div>
               </div>
             </div>
