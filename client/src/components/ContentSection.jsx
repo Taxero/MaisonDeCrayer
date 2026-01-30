@@ -18,7 +18,7 @@ const ContentSection = () => {
           <span className="text-yellow-400 text-sm tracking-wider uppercase mb-4 block">Welcome to</span>
           <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white">Maison De Crayer</h2>
           <p className="text-white/70 text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            A historic landmark since 1898, our hotel combines Belgian heritage with contemporary luxury.
+            A historic landmark since 1898, our Accommodation combines Belgian heritage with contemporary Deluxe.
             Nestled in the heart of Brussels, we offer an exclusive retreat for discerning travelers.
           </p>
         </div>
@@ -50,11 +50,11 @@ const ContentSection = () => {
             <p className="text-white/70 leading-relaxed mb-6 font-light">
               Step into a world where Belgian sophistication meets modern comfort. Our carefully curated
               spaces reflect the rich cultural heritage of Brussels while providing contemporary amenities
-              for the ultimate luxury experience.
+              for the ultimate Deluxe experience.
             </p>
 
             <p className="text-white/70 leading-relaxed mb-8 font-light">
-              From our meticulously designed suites to our award-winning restaurant, every detail has
+              From our meticulously designed Accommodation to our award-winning restaurant, every detail has
               been crafted to exceed your expectations. Our dedicated team ensures your stay is nothing
               short of extraordinary.
             </p>
@@ -62,8 +62,8 @@ const ContentSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400 mb-2">50+</div>
-                <div className="text-white/60 text-sm">Luxury Suites</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-2"></div>
+                <div className="text-white/60 text-sm"></div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-400 mb-2">1898</div>

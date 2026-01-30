@@ -1,7 +1,6 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Heart, Map, Clock, Shield } from 'lucide-react';
 
 export const quickLinks = [
-  { name: 'About Us', href: '/' },
   { name: 'Accommodation', href: '/rooms' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Events', href: '/rooms' },
@@ -30,6 +29,6 @@ export const socialLinks = [
 export const stats = [
   { number: '1898', label: 'Founded', icon: Clock },
   { number: '50+', label: 'Suites', icon: Shield },
-  { number: '5★', label: 'Rating', icon: Heart },
+  // { number: '5★', label: 'Rating', icon: Heart },
   { number: '24/7', label: 'Service', icon: Map }
 ];

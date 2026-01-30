@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Stats Section */}
       <div className="py-12 px-6 md:px-8 lg:px-16 bg-gradient-to-b from-transparent to-black/50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-white/70 text-sm leading-relaxed mb-6">
-                Experience the perfect blend of Belgian elegance and modern luxury in the heart of Brussels.
+                Experience the perfect blend of Belgian elegance and modern Deluxe in the heart of Brussels.
                 Your unforgettable journey awaits.
               </p>
               <div className="flex gap-3">
@@ -81,7 +81,7 @@ const Footer = () => {
             {/* Services */}
             <div>
               <h4 className="text-white font-semibold text-lg mb-6">Our Services</h4>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid flex-col gap-3">
                 {services.map((service, index) => (
                   <div key={index} className="flex items-center gap-2 text-white/70 text-sm hover:text-white transition-colors">
                     <span className="text-lg">{service.icon}</span>

@@ -113,8 +113,8 @@ const Hero = () => {
             <div className="flex items-center gap-3 glass-morphism rounded-lg px-4 py-3 hover-lift group">
               <Sparkles className="text-yellow-400 group-hover:animate-pulse" size={18} />
               <div>
-                <div className="text-white font-medium text-sm">50 Suites</div>
-                <div className="text-white/60 text-xs">Premium Comfort</div>
+                <div className="text-white font-medium text-sm">Comfort & Elegance</div>
+                <div className="text-white/60 text-xs">Superior Comfort</div>
               </div>
             </div>
             

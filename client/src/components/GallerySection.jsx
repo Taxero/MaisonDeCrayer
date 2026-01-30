@@ -36,7 +36,7 @@ const GallerySection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-yellow-400 uppercase text-xs tracking-widest">Gallery</span>
-          <h2 className="text-white font-serif text-4xl mt-3">Experience Our Luxury</h2>
+          <h2 className="text-white font-serif text-4xl mt-3">Experience Our Deluxe</h2>
         </div>
 
         {/* Filters */}

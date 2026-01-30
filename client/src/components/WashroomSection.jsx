@@ -29,13 +29,13 @@ const WashroomSection = () => {
             <Bath className="text-black" size={32} />
           </div>
           <span className="text-yellow-400 text-sm tracking-wider uppercase mb-4 block">
-            Luxury Amenities
+            Deluxe Amenities
           </span>
           <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white">
             Premium Washrooms
           </h2>
           <p className="text-white/70 text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Experience the pinnacle of luxury in our meticulously designed washrooms. From spa-inspired retreats
+            Experience the pinnacle of Deluxe in our meticulously designed washrooms. From spa-inspired retreats
             to modern executive facilities, each space combines elegance, functionality, and cutting-edge technology.
           </p>
         </div>

@@ -10,7 +10,7 @@ import hall from '../assets/hall.jpg';
 
 
 export const amenities = [
-  { icon: Wifi, name: "High-Speed WiFi", description: "Complimentary throughout the hotel" },
+  { icon: Wifi, name: "High-Speed WiFi", description: "Complimentary throughout the Accommodation" },
   // { icon: Car, name: "Valet Parking", description: "24/7 secure parking service" },
   { icon: Coffee, name: "Premium Lounge", description: "Artisan coffee and cocktails" },
   // { icon: Dumbbell, name: "Fitness Center", description: "State-of-the-art equipment" },
@@ -20,5 +20,5 @@ export const amenities = [
 
 export const features = [
   { icon: Crown, title: "Heritage Since 1898", description: "Over a century of excellence in hospitality" },
-  { icon: Shield, title: "Premium Quality", description: "5-star luxury experience guaranteed" }
+  { icon: Shield, title: "Premium Quality", description: "Amazing Experience guaranteed" }
 ];

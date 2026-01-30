@@ -2,8 +2,8 @@ import { Droplets, Sparkles, Wind, Shield } from "lucide-react";
 import Washroom from "../assets/Washroom.jpg";
 import Washroom2 from "../assets/Washroom2.jpg";
 import Washroom4 from "../assets/Washroom4.jpg";
-import Mirror from "../assets/Mirror.jpg";
-import Mirror2 from "../assets/Mirror2.jpg";
+// import Mirror from "../assets/Mirror.jpg";
+// import Mirror2 from "../assets/Mirror2.jpg";
 
 export const washroomFeatures = [
   {
@@ -48,34 +48,37 @@ export const washroomFeatures = [
     ],
     category: "Luxury",
   },
-  {
-    id: 4,
-    title: "Classic Vanity Area",
-    image: Mirror,
-    description:
-      "Elegant vanity area with vintage mirror and premium lighting",
-    features: [
-      "Vintage Mirror",
-      "Premium Lighting",
-      "Marble Counter",
-      "Ample Storage",
-    ],
-    category: "Classic",
-  },
-  {
-    id: 5,
-    title: "Modern Mirror Design",
-    image: Mirror2,
-    description:
-      "Contemporary mirror design with integrated lighting and storage",
-    features: [
-      "Integrated Lighting",
-      "Smart Mirror",
-      "Hidden Storage",
-      "Anti-Fog",
-    ],
-    category: "Modern",
-  },
+  /* The code snippet you provided is defining an array of objects representing different washroom
+  features. Each object contains details such as the title, image, description, features, and
+  category of a specific washroom feature. */
+  // {
+  //   id: 4,
+  //   title: "Classic Vanity Area",
+  //   image: Mirror,
+  //   description:
+  //     "Elegant vanity area with vintage mirror and premium lighting",
+  //   features: [
+  //     "Vintage Mirror",
+  //     "Premium Lighting",
+  //     "Marble Counter",
+  //     "Ample Storage",
+  //   ],
+  //   category: "Classic",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Modern Mirror Design",
+  //   image: Mirror2,
+  //   description:
+  //     "Contemporary mirror design with integrated lighting and storage",
+  //   features: [
+  //     "Integrated Lighting",
+  //     "Smart Mirror",
+  //     "Hidden Storage",
+  //     "Anti-Fog",
+  //   ],
+  //   category: "Modern",
+  // },
 ];
 
 export const amenities = [
