@@ -1,4 +1,5 @@
 const { body } = require("express-validator");
+const { parsePhoneNumberFromString } = require("libphonenumber-js");
 
 exports.registerValidator = [
   body("name")
@@ -6,9 +7,15 @@ exports.registerValidator = [
     .withMessage("Name is required"),
 
   body("phone")
-    .matches(/^\+?[0-9\s-]{8,15}$/)
-    .withMessage("Enter a valid international phone number"),
+    .custom((value) => {
+      const phone = parsePhoneNumberFromString(value);
 
+      if (!phone || !phone.isValid()) {
+        throw new Error("Enter a valid phone number");
+      }
+
+      return true;
+    }),
 
   body("email")
     .isEmail()

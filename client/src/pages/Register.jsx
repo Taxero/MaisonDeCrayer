@@ -26,15 +26,33 @@ const Register = () => {
 
   const passwordValue = watch("password", "");
 
+  // const onSubmit = async (data) => {
+  //   try {
+  //     await api.post("/auth/register", data);
+  //     toast.success("Account created successfully");
+  //     navigate("/login");
+  //   } catch (err) {
+  //     console.log(err)
+  //     toast.error(err.response?.data?.message || "Registration failed");
+  //   }
+  // };
+
   const onSubmit = async (data) => {
     try {
       await api.post("/auth/register", data);
       toast.success("Account created successfully");
       navigate("/login");
     } catch (err) {
-      toast.error(err.response?.data?.message || "Registration failed");
+      console.log(err);
+
+      const apiError = err.response?.data;
+
+      toast.error(
+        apiError?.errors?.[0]?.message || apiError?.message || "Registration failed"
+      );
     }
   };
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black px-4 relative overflow-hidden pt-25">
@@ -149,7 +167,7 @@ const Register = () => {
             <div className="relative">
               <FaPhoneAlt className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm" />
               <input
-                placeholder="Phone number"
+                placeholder="Phone number with country code "
                 className="w-full bg-black/70
                  border border-white/20
                  text-white
@@ -162,7 +180,7 @@ const Register = () => {
                   required: "Phone number is required",
                   pattern: {
                     value: /^\+?[0-9\s-]{8,15}$/,
-                    message: "Enter a valid international phone number",
+                    message: "Enter a valid phone number",
                   },
                 })}
               />
