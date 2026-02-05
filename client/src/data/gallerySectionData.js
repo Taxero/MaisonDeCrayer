@@ -35,12 +35,12 @@ import Mirror from "../assets/Mirror.jpg";
 import Mirror2 from "../assets/Mirror2.jpg";
 
 export const galleryImages = [
-  { src: Bedroom1, category: "Bedrooms", title: "Executive Suite" },
+  { src: Bedroom1, category: "Bedrooms", title: "Executive Residences" },
   { src: Bedroom2, category: "Bedrooms", title: "Deluxe Room" },
   { src: Bedroom3, category: "Bedrooms", title: "Presidential Suite" },
   { src: Bedroom4, category: "Bedrooms", title: "Classic Room" },
-  { src: Bedroom5, category: "Bedrooms", title: "Family Suite" },
-  { src: Bedroom6, category: "Bedrooms", title: "Honeymoon Suite" },
+  { src: Bedroom5, category: "Bedrooms", title: "Family Residences" },
+  { src: Bedroom6, category: "Bedrooms", title: "Honeymoon Residences" },
   { src: SingleBed, category: "Bedrooms", title: "Single Deluxe" },
   { src: SingleBed2, category: "Bedrooms", title: "Single Premium" },
   { src: SingleBed3, category: "Bedrooms", title: "Single Executive" },

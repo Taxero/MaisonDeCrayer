@@ -78,7 +78,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center justify-end gap-8">
             {[
               { name: "Home", to: "/" },
-              { name: "Accommondation", to: "/rooms" },
+              { name: "Accommodation", to: "/rooms" },
               { name: "Gallery", to: "/gallery" },
               { name: "Contact", to: "/contact" },
               ...(user ? [{ name: "My Bookings", to: "/my-bookings" }] : []),
@@ -178,7 +178,7 @@ const Navbar = () => {
             <div className="px-6 py-6 space-y-4">
               {[
                 { name: "Home", to: "/" },
-                { name: "Accommondation", to: "/rooms" },
+                { name: "Accommodation", to: "/rooms" },
                 { name: "Gallery", to: "/gallery" },
                 { name: "Contact", to: "/contact" },
                 ...(user ? [{ name: "My Bookings", to: "/my-bookings" }] : []),
