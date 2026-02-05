@@ -151,28 +151,30 @@ const Register = () => {
               <input
                 placeholder="Phone number"
                 className="w-full bg-black/70
-                           border border-white/20
-                           text-white
-                           pl-11 pr-4 py-3 rounded-lg
-                           outline-none
-                           focus:border-yellow-400
-                           focus:ring-1 focus:ring-yellow-400/50
-                           transition"
+                 border border-white/20
+                 text-white
+                 pl-11 pr-4 py-3 rounded-lg
+                 outline-none
+                 focus:border-yellow-400
+                 focus:ring-1 focus:ring-yellow-400/50
+                 transition"
                 {...register("phone", {
                   required: "Phone number is required",
                   pattern: {
-                    value: /^[6-9]\d{9}$/,
-                    message: "Enter a valid 10-digit mobile number",
+                    value: /^\+?[0-9\s-]{8,15}$/,
+                    message: "Enter a valid international phone number",
                   },
                 })}
               />
             </div>
+
             {errors.phone && (
               <p className="text-red-400 text-xs mt-1">
                 {errors.phone.message}
               </p>
             )}
           </div>
+
 
           {/* PASSWORD */}
           <div>

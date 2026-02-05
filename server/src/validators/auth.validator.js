@@ -6,8 +6,9 @@ exports.registerValidator = [
     .withMessage("Name is required"),
 
   body("phone")
-    .isLength({ min: 10, max: 10 })
-    .withMessage("phone should be equal to 10 digit"),
+    .matches(/^\+?[0-9\s-]{8,15}$/)
+    .withMessage("Enter a valid international phone number"),
+
 
   body("email")
     .isEmail()
