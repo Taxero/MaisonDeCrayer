@@ -28,11 +28,12 @@ const AdminBookingExpanded = ({ booking, bookingType }) => {
           {booking.user?.email}
         </p>
 
-        <p className="flex items-center gap-2 text-gray-300">
+        {/* <p className="flex items-center gap-2 text-gray-300">
           <FaPhone />
           {booking.user?.phone}
-        </p>
+        </p> */}
         {/* BOOKING REFERENCE */}
+
         <div className="border border-white/10 rounded-xl p-4 bg-black/30">
           <p className="text-xs uppercase tracking-wider text-white/60 mb-1">
             Booking Reference
