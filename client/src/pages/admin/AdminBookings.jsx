@@ -143,7 +143,8 @@ const AdminBookings = () => {
 
       {/* FILTERS */}
       <AdminBookingsFilters
-        statusFilter={statusFilter}
+        // statusFilter={statusFilter}
+              statusFilter='Paid'
         setStatusFilter={setStatusFilter}
         checkedInFilter={checkedInFilter}
         setCheckedInFilter={setCheckedInFilter}
